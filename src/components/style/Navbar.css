@@ -5,18 +5,6 @@
 .logo:hover {
     cursor: pointer;
 }
-
-.navbar-button {
-    color: var(--lightgray);
-    font-family: var(--font);
-    font-weight: var(--medium);
-    margin-left: var(--nav-spacing);
-    margin-right: var(--nav-spacing);
-}
-.navbar-button:hover {
-    color: white;
-    cursor: pointer;
-}
 .navbar-buttons {
     display: flex;
     justify-content: center;
@@ -37,4 +25,15 @@
     width: 100%;
     background-color:#14161F;
     z-index: 9;
+}
+.navbar-button {
+    color: var(--lightgray);
+    font-family: var(--font);
+    font-weight: var(--medium);
+    margin-left: var(--nav-spacing);
+    margin-right: var(--nav-spacing);
+}
+.navbar-button:hover {
+    color: white;
+    cursor: pointer;
 }

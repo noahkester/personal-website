@@ -2,6 +2,9 @@ import './style/Projects.css';
 import flipboard from '../images/flipboard.png'
 import awesome_mix from '../images/awesome_mix.png'
 import MainButton from './MainButton';
+import Line from './Line'
+import { NavbarButton } from './Navbar';
+
 
 function Project(props) {
     return (
@@ -18,6 +21,20 @@ function Project(props) {
     )
 }
 
+function ProjectNavbar() {
+    return (
+        <div className="project-navbar">
+            <Line />
+            <div className="navbar-buttons">
+                <NavbarButton text="Other Projects:" />
+                <NavbarButton text="This Website!" />
+                <NavbarButton text="Cryptocurrency Mining Rig" />
+                <NavbarButton text="Tuktuk Admin Dashboard" />
+            </div>
+            <Line />
+        </div>
+    )
+}
 
 function Projects() {
     return (
@@ -26,7 +43,7 @@ function Projects() {
                 <div id="projects" className="subheading-text">Featured Projects</div>
                 <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} />
                 <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} />
-
+                <ProjectNavbar />
             </div>
         </div>
     )

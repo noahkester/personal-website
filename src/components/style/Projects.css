@@ -10,7 +10,8 @@
 }
 .project {
     position: relative;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .project-container {
     padding: 40px;
@@ -31,4 +32,13 @@
 }
 .project-button {
     float: right;
+}
+.navbar-buttons {
+    display: flex;
+    height: 75px;
+}
+.project-navbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }

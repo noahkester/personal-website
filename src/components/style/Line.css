@@ -3,4 +3,5 @@
 .line {
     background-color: var(--lightgray);
     height: 1px;
+    width: 100%;
 }
