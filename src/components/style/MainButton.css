@@ -1,0 +1,22 @@
+@import "../../App.css";
+
+.main-button {
+    background-color: var(--blue);
+    color: white;
+    font-family: var(--font);
+    font-weight: var(--bold);
+    display: inline-block;
+    border-radius: 50px;
+    transition: background-color 0.5s ease-in-out;
+}
+.main-button:hover {
+    cursor: pointer;
+    background-color: var(--lightblue);
+
+}
+.main-button-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+}

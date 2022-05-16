@@ -1,0 +1,26 @@
+@import "../../App.css";
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about-text {
+    width: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.profile-image {
+    width: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.about-container {
+    padding-top: 60px;
+}
+.about-text-element {
+    padding-top: 30px;
+}

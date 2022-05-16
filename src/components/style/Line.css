@@ -1,0 +1,6 @@
+@import "../../App.css";
+
+.line {
+    background-color: var(--lightgray);
+    height: 1px;
+}
