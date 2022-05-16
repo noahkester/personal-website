@@ -16,9 +16,9 @@ import github_image from '../images/github.svg'
 
 function BannerElement(props) {
     return (
-        <div className = "banner-element">
+        <div className="banner-element">
             <div className="vertical-line"></div>
-            <div className="ticker-element">
+            <div className={props.ticker_class}>
                 <div className="ticker-components">
                     <img className="ticker-component banner-image" src={props.img_src} />
                     <div className="ticker-component description-text">{props.text}</div>
@@ -27,42 +27,70 @@ function BannerElement(props) {
         </div>
     )
 }
-function Banner() {
+function SkillsBanner() {
     return (
         <div>
             <Line />
             <div className="ticker-tape-container">
                 <div className="ticker-tape img-ticker">
-                    <BannerElement img_src={css_image} text="CSS" />
-                    <BannerElement img_src={js_image} text="JavaScript" />
-                    <BannerElement img_src={html5_image} text="HTML5" />
-                    <BannerElement img_src={python_image} text="Python" />
-                    <BannerElement img_src={git_image} text="Git" />
-                    <BannerElement img_src={react_image} text="React" />
-                    <BannerElement img_src={c_image} text="C++" />
-                    <BannerElement img_src={docker_image} text="Docker" />
-                    <BannerElement img_src={java_image} text="Java" />
-                    <BannerElement img_src={electron_image} text="Electron" />
-                    <BannerElement img_src={redis_image} text="Redis" />
-                    <BannerElement img_src={mysql_image} text="MySQL" />
-                    <BannerElement img_src={github_image} text="GitHub" />
-                    <BannerElement img_src={css_image} text="CSS" />
-                    <BannerElement img_src={js_image} text="JavaScript" />
-                    <BannerElement img_src={html5_image} text="HTML5" />
-                    <BannerElement img_src={python_image} text="Python" />
-                    <BannerElement img_src={git_image} text="Git" />
-                    <BannerElement img_src={react_image} text="React" />
-                    <BannerElement img_src={c_image} text="C++" />
-                    <BannerElement img_src={docker_image} text="Docker" />
-                    <BannerElement img_src={java_image} text="Java" />
-                    <BannerElement img_src={electron_image} text="Electron" />
-                    <BannerElement img_src={redis_image} text="Redis" />
-                    <BannerElement img_src={mysql_image} text="MySQL" />
-                    <BannerElement img_src={github_image} text="GitHub" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={css_image} text="CSS" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={js_image} text="JavaScript" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={html5_image} text="HTML5" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={python_image} text="Python" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={git_image} text="Git" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={react_image} text="React" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={c_image} text="C++" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={docker_image} text="Docker" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={java_image} text="Java" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={electron_image} text="Electron" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={redis_image} text="Redis" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={mysql_image} text="MySQL" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={github_image} text="GitHub" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={css_image} text="CSS" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={js_image} text="JavaScript" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={html5_image} text="HTML5" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={python_image} text="Python" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={git_image} text="Git" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={react_image} text="React" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={c_image} text="C++" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={docker_image} text="Docker" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={java_image} text="Java" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={electron_image} text="Electron" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={redis_image} text="Redis" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={mysql_image} text="MySQL" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={github_image} text="GitHub" />
                 </div>
             </div>
             <Line />
         </div>
     );
 }
-export default Banner;
+function EducationBanner() {
+    return (
+        <div>
+            <Line />
+            <div className="ticker-tape-container">
+                <div className="ticker-tape img-ticker">
+                    <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                </div>
+            </div>
+            <Line />
+        </div>
+    );
+}
+export { SkillsBanner, EducationBanner };

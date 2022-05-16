@@ -1,0 +1,57 @@
+@import "../../App.css";
+.experience {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.education {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.education-text {
+    margin-left: 50px;
+    width: 600px;
+}
+.ut-logo {
+    width: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.experience-logo {
+    width: 150px;
+    padding: 20px;
+}
+.sub-experience-logo {
+    width: 100px;
+    padding: 20px;
+}
+.experience-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin: 50px;
+}
+.sub-experience-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-left: 200px;
+}
+.experience-timeline {
+    display: flex;
+    align-items: center;
+}
+.timeline-line {
+    height: 700px;
+    width: 10px;
+    background-color: var(--blue);
+}

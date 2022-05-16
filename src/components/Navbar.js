@@ -1,5 +1,5 @@
 import './style/Navbar.css';
-import logo from '../images/logo.svg'
+import logo from '../images/logo.svg';
 import MainButton from './MainButton';
 import Line from './Line'
 
@@ -28,7 +28,7 @@ function Navbar() {
                 <div className="navbar-buttons">
                     <a href="#about"><NavbarButton text="About" /></a>
                     <a href="#projects"><NavbarButton text="Projects" /></a>
-                    <NavbarButton text="Experience" />
+                    <a href="#experience"><NavbarButton text="Experience" /></a>
                     <a href="https://docs.google.com/document/d/e/2PACX-1vRzSNC9u-tXyWwIpJhhx-4UPQg-TrwBSCkvia6_qha3Y8S4R0PfPw6GhCniDP2ZbljqaxYbn709QIZm/pub" target="_blank"><NavbarButton text="Resume" /></a>
                     <a href="https://github.com/noahkester" target="_blank"><NavbarButton text="Github" /></a>
                 </div>

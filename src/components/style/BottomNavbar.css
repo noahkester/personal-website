@@ -1,0 +1,10 @@
+@import "../../App.css";
+.bottom-navbar {
+    background-color: var(--secondary-dark-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-navbar-element {
+    padding: 50px;
+}

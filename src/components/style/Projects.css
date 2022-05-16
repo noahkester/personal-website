@@ -1,7 +1,7 @@
 @import "../../App.css";
 
 .projects {
-    height: 100vh;
+    /*border: solid white;*/
 }
 .projects-title {
     display: flex;
@@ -41,4 +41,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
+}
+.project-description {
+    width: 800px;
 }

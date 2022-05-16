@@ -3,6 +3,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .ticker-tape {
@@ -17,6 +18,14 @@
   align-self: flex-start;
   flex: none;
   width: 16rem;
+}
+
+.large-ticker-element {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-self: flex-start;
+  flex: none;
+  width: 24rem;
 }
 
 .ticker-components {

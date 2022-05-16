@@ -8,9 +8,12 @@
     --medium: 500;
     --bold: 700;
     --nav-spacing: 30px;
+    --main-dark-background: #14161F;
+    --secondary-dark-background: #1C1C1C;
+    --container-dark-background: #191B25;
 }
 html {
-    background-color: #14161F;
+    background-color: var(--main-dark-background);
     scroll-behavior: smooth;
 }
 a {
@@ -49,7 +52,7 @@ a {
     color: white;
 }
 .general-container {
-    background-color: #191B25;
+    background-color: var(--container-dark-background);
     border-radius: 20px;
     border: solid var(--lightgray) 1px;
 }
