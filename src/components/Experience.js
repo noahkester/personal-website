@@ -42,14 +42,22 @@ function SubExperienceElement(props) {
 }
 function Timeline() {
     return (
-        <div className="timeline-line">&nbsp;</div>
+        <div className = "timeline">
+            <div className = "timeline-circle"></div>
+            <div className="timeline-subline">&nbsp;</div>
+            <div className = "timeline-circle"></div>
+            <div className="timeline-subline">&nbsp;</div>
+            <div className = "timeline-circle"></div>
+            <div className="timeline-subline">&nbsp;</div>
+            <div className = "timeline-circle"></div>
+        </div>
     )
 }
 function AllExperience() {
     return (
         <div>
             <ExperienceElement logo={momentum_logo} name="Momentum" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
-            <SubExperienceElement logo={tuktuk_logo} name="Tuktuk" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
+            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
             <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
             <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
         </div>

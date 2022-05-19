@@ -2,6 +2,7 @@
 
 .projects {
     /*border: solid white;*/
+    padding-top: 200px;
 }
 .projects-title {
     display: flex;

@@ -39,9 +39,9 @@ function ProjectNavbar() {
 
 function Projects() {
     return (
-        <div className="projects">
+        <div id="projects" className="projects">
             <div className="projects-title">
-                <div id="projects" className="subheading-text">Featured Projects</div>
+                <div className="subheading-text">Featured Projects</div>
                 <div className="description-text project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</div>
                 <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" />
                 <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" />

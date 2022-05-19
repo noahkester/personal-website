@@ -8,9 +8,9 @@ function BottomNavbar() {
             <div className="bottom-navbar">
                 <div className="bottom-navbar-element">
                     <div className="small-subheading-text">Noah Kester</div>
-                    <div className="small-description-text">• Full Stack Developer</div>
-                    <div className="small-description-text">• noahkester35@gmail.com</div>
-                    <div className="small-description-text">• Austin, TX</div>
+                    <div className="small-description-text">Full Stack Developer</div>
+                    <div className="small-description-text">noahkester35@gmail.com</div>
+                    <div className="small-description-text">Austin, TX</div>
                 </div>
                 <div className="small-subheading-text bottom-navbar-element">Want to know more about me? -></div>
                 <div className="bottom-navbar-element">
