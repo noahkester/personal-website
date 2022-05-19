@@ -15,7 +15,7 @@ function Titles() {
 
 function Introduction() {
     return (
-        <div id = "introduction" className="introduction">
+        <div id="introduction" className="introduction" data-aos="fade-right">
             <div className="introduction-text">
                 <div className="heading-text">Hello! I'm Noah Kester.</div>
                 <Titles />

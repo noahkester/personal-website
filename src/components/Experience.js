@@ -8,7 +8,7 @@ import { EducationBanner } from "./Banner";
 function Education() {
     return (
         <div>
-            <div className="education">
+            <div className="education" data-aos="fade-up">
                 <div className="general-container">
                     <img className="ut-logo" src={ut_logo} />
                 </div>
@@ -20,7 +20,7 @@ function Education() {
 }
 function ExperienceElement(props) {
     return (
-        <div className="general-container experience-element">
+        <div className="general-container experience-element" data-aos="fade-left">
             <img className="experience-logo" src={props.logo} />
             <div>
                 <div className="small-subheading-text">{props.name}</div>
@@ -42,14 +42,14 @@ function SubExperienceElement(props) {
 }
 function Timeline() {
     return (
-        <div className = "timeline">
-            <div className = "timeline-circle"></div>
+        <div className="timeline">
+            <div className="timeline-circle"></div>
             <div className="timeline-subline">&nbsp;</div>
-            <div className = "timeline-circle"></div>
+            <div className="timeline-circle"></div>
             <div className="timeline-subline">&nbsp;</div>
-            <div className = "timeline-circle"></div>
+            <div className="timeline-circle"></div>
             <div className="timeline-subline">&nbsp;</div>
-            <div className = "timeline-circle"></div>
+            <div className="timeline-circle"></div>
         </div>
     )
 }
@@ -66,7 +66,7 @@ function AllExperience() {
 function Experience() {
     return (
         <div id="experience" className="experience">
-            <div className="subheading-text">Education and Experience</div>
+            <div className="subheading-text" data-aos="fade-up">Education and Experience</div>
             <Education />
             <div className="experience-timeline">
                 <Timeline />

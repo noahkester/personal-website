@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function Project(props) {
     return (
-        <div className="project">
+        <div className="project" data-aos={props.fade}>
             <div className="general-container project-container">
                 <img className="flipboard" src={props.image_src} />
             </div>
@@ -41,10 +41,10 @@ function Projects() {
     return (
         <div id="projects" className="projects">
             <div className="projects-title">
-                <div className="subheading-text">Featured Projects</div>
-                <div className="description-text project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</div>
-                <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" />
-                <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" />
+                <div className="subheading-text" data-aos="fade-up">Featured Projects</div>
+                <div className="description-text project-description" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</div>
+                <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" fade="fade-up" />
+                <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" fade="fade-right"/>
                 <ProjectNavbar />
             </div>
         </div>

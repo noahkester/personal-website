@@ -11,6 +11,10 @@
     />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!--AOS animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,5 +25,22 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 1200});
+      document.addEventListener('scroll', function(e) {
+        var height = window.innerHeight;
+        var element = document.getElementById("about");
+        var test = element.getBoundingClientRect();
+        //console.log(h, test.top, test.bottom);
+      })
+      document.addEventListener('aos:in', ({ detail }) => {
+        console.log('animated in', detail);
+      });
+
+      document.addEventListener('aos:out', ({ detail }) => {
+        console.log('animated out', detail);
+      });
+    </script>
   </body>
 </html>

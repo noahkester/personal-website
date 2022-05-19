@@ -3,7 +3,7 @@ import MainButton from "./MainButton";
 import Line from "./Line";
 function BottomNavbar() {
     return (
-        <div>
+        <div data-aos="fade-up">
             <Line />
             <div className="bottom-navbar">
                 <div className="bottom-navbar-element">

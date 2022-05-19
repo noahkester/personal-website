@@ -22,7 +22,7 @@ function NavbarButton(props) {
 }
 function Navbar() {
     return (
-        <div className="navbar-container">
+        <div className="navbar-container" data-aos="fade-down">
             <div className="navbar">
                 <a href="#introduction"><Logo /></a>
                 <div className="navbar-buttons">
@@ -41,4 +41,4 @@ function Navbar() {
     );
 }
 
-export {Navbar, NavbarButton};
+export { Navbar, NavbarButton };
