@@ -42,18 +42,29 @@
 
 }
 
-@keyframes ticker-kf {
+@keyframes ticker-kf-0 {
   0% {
     transform: translate3d(0, 0, 0);
   }
 
   100% {
-    transform: translate3d(-260rem, 0, 0); /*TODO Calculate this better*/
+    transform: translate3d(-370rem, 0, 0); 
   }
 }
+@keyframes ticker-kf-1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
 
-.img-ticker {
-  animation: ticker-kf 20s linear infinite;
+  100% {
+    transform: translate3d(-150rem, 0, 0); 
+  }
+}
+.img-ticker-0 {
+  animation: ticker-kf-0 20s linear infinite;
+}
+.img-ticker-1 {
+  animation: ticker-kf-1 20s linear infinite;
 }
 
 .banner-image {

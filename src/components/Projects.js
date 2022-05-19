@@ -15,7 +15,7 @@ function Project(props) {
             </div>
             <div className={props.classes}>
                 <div className="small-subheading-text">{props.title}</div>
-                <div className="small-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus </div>
+                <div className="small-description-text">{props.description}</div>
                 <Link className="project-button" to={props.link}><MainButton text="Try it!" /></Link>
             </div>
         </div>
@@ -42,9 +42,9 @@ function Projects() {
         <div id="projects" className="projects">
             <div className="projects-title">
                 <div className="subheading-text" data-aos="fade-up">Featured Projects</div>
-                <div className="description-text project-description" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</div>
-                <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" fade="fade-up" />
-                <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" fade="fade-right"/>
+                <div className="description-text project-description" data-aos="fade-up">I enjoy developing apps and projects that blend interesting technologies with UI/UX design. Try some of them out and read how I build them in my blog and github links.</div>
+                <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" fade="fade-up" description="Beautifully animated text box that emulates a train station flipboard" />
+                <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" fade="fade-right" description="Modern record player that reads RFID values and plays songs from the Spotify API" />
                 <ProjectNavbar />
             </div>
         </div>

@@ -7,7 +7,7 @@ function Titles() {
             <div className="message">
                 <div>Software Engineer.</div>
                 <div>Web Developer.</div>
-                <div>Absolute Beast.</div>
+                <div>Start-up Enthusiast.</div>
             </div>
         </div>
     );

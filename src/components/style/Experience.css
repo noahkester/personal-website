@@ -18,7 +18,7 @@
 }
 .education-text {
     margin-left: 50px;
-    width: 600px;
+    width: 800px;
 }
 .ut-logo {
     width: 150px;
@@ -28,7 +28,7 @@
     padding-right: 10px;
 }
 .experience-logo {
-    width: 150px;
+    width: 100px;
     padding: 20px;
 }
 .sub-experience-logo {
@@ -54,7 +54,7 @@
     align-items: center;
 }
 .timeline-subline {
-    height: 210px;
+    height: 170px;
     width: 10px;
     background-color: var(--blue);
 }

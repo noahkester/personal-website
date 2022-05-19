@@ -32,7 +32,7 @@ function SkillsBanner() {
         <div>
             <Line />
             <div className="ticker-tape-container">
-                <div className="ticker-tape img-ticker">
+                <div className="ticker-tape img-ticker-0">
                     <BannerElement ticker_class={"ticker-element"} img_src={css_image} text="CSS" />
                     <BannerElement ticker_class={"ticker-element"} img_src={js_image} text="JavaScript" />
                     <BannerElement ticker_class={"ticker-element"} img_src={html5_image} text="HTML5" />
@@ -70,7 +70,7 @@ function EducationBanner() {
         <div>
             <Line />
             <div className="ticker-tape-container">
-                <div className="ticker-tape img-ticker">
+                <div className="ticker-tape img-ticker-1">
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />

@@ -12,7 +12,11 @@ function Education() {
                 <div className="general-container">
                     <img className="ut-logo" src={ut_logo} />
                 </div>
-                <div className="description-text education-text">University of Texas at Austin. Bachelors of Computer Science. Minor in Entrepreneurship. Graduation: May 2024</div>
+                <div>
+                    <div className="description-text education-text">University of Texas at Austin</div>
+                    <div className="description-text education-text">Bachelors of Computer Science | Minor in Entrepreneurship</div>
+                    <div className="description-text education-text">Graduation May 2024</div>
+                </div>
             </div>
             <EducationBanner />
         </div>
@@ -56,10 +60,11 @@ function Timeline() {
 function AllExperience() {
     return (
         <div>
-            <ExperienceElement logo={momentum_logo} name="Momentum" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
-            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
-            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
-            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus" />
+            <ExperienceElement logo={momentum_logo} name="Momentum" description="Coordinated logistics for the newest startup accelerator and incubator at University of Texas as a lead founding officer" />
+            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" description="Lead a SCRUM team of 5 engineers to develop an admin dashboard for Tuktuk which displayed critical real-time data" />
+            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" description="Accelerated development of space flight simulation software by recognizing and diagnosing 27+ critical system errors
+" />
+            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" description=" Developed a dynamic website and email database to boost company exposure and gain contact list of over 50 clients" />
         </div>
     );
 }

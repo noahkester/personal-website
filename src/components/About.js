@@ -18,7 +18,7 @@ function About() {
             </div>
             <div className="about-text" data-aos="fade-left">
                 <div className="subheading-text">About Me</div>
-                <div className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus ewrniu nfjsni osfodspsddfdkkkfr ir</div>
+                <div className="description-text">My interests include full-stack engineering, web-dev, mobile computing, blockchain, and technical project management. I have a passion for leading teams through the full development process for products from start to finish. I am a strong believer in the Feynman technique and love the quote “Simplicity is the ultimate sophistication”. I apply this principle with everything I create and love breaking down difficult concepts into manageable steps.</div>
                 <div className="about-text-element"><a href="https://www.linkedin.com/in/noah-kester/" target="_blank"><MainButton text="LinkedIn" /></a></div>
             </div>
         </div>
