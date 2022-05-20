@@ -1,0 +1,56 @@
+@import "../App.css";
+
+.flipboard {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /*border: white solid;*/
+}
+.flipboard-display {
+    position: relative;
+    margin-top: 100px;
+    height: 720px;
+    width: 1300px;
+}
+.flip-square {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    background-image: url("../images/symbol_sprite_sheet.png");
+    background-size: cover;
+}
+.flipboard-hide-row {
+    z-index: 999;
+    background-color: #202020;
+    height: 80px;
+    position: relative;
+}
+@media only screen and (max-width: 1300px) {
+    .flipboard-con {
+        display: none;
+    }
+}
+.flipboard-background {
+    background-color: #202020;
+    height: 700px;
+    width: 1300px;
+    position: absolute;
+    top: 0px;
+}
+.flipboard-input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #262832;
+    height: 40px;
+    width: 900px;
+    color: var(--lightgray);
+    padding-left: 20px;
+    border-radius: 20px;
+    font-family: var(--font);
+    font-weight: var(--medium);
+}
+.flipboard-input:focus {
+    outline: none;
+}

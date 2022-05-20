@@ -19,7 +19,7 @@ function Introduction() {
             <div className="introduction-text">
                 <div className="heading-text">Hello! I'm Noah Kester.</div>
                 <Titles />
-                <div className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus ewrniu nfjsni osfodspsddpf fdkkkfr ir</div>
+                <div className="description-text">I’m a Computer Science major at the University of Texas, Hook Em! I have a passion for entrepreneurship and love using technology to build things that have true impact in my community</div>
             </div>
         </div>
     )

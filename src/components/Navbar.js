@@ -4,11 +4,8 @@ import MainButton from './MainButton';
 import Line from './Line'
 
 function Logo() {
-    var reload = () => {
-        //window.location.reload(false);
-    }
     return (
-        <div onClick={reload}>
+        <div>
             <img className="logo" src={logo} />
         </div>
     );

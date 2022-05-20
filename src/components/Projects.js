@@ -11,7 +11,7 @@ function Project(props) {
     return (
         <div className="project" data-aos={props.fade}>
             <div className="general-container project-container">
-                <img className="flipboard" src={props.image_src} />
+                <img className="project-image" src={props.image_src} />
             </div>
             <div className={props.classes}>
                 <div className="small-subheading-text">{props.title}</div>
