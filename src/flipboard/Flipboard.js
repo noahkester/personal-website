@@ -305,7 +305,7 @@ function handleKeyHelpButton() {
 // Handle the "Encrypt!" "Decrypt!" or "Display!" Button
 function handleDisplayButton() {
     // First grab input data
-    var textInput = document.getElementById("Message-Text-Box").value;
+    var textInput = document.getElementById("flipboard-input").value;
     // Check if user only wants to display
     displayWord(fullRefactorWord(textInput), timingDataMedium);
     return;
@@ -379,7 +379,6 @@ function FlipSquare(props) {
 function FlipCard(props) {
     var id1 = "FS_0_" + props.cardNum + "_" + props.componentNum;
     var id2 = "FS_1_" + props.cardNum + "_" + props.componentNum;
-    console.log(id1 + " " + id2)
     return (
         <Fragment>
             <FlipSquare
@@ -451,12 +450,5 @@ class Flipboard extends React.Component {
         )
     }
 }
-document.addEventListener("DOMContentLoaded", function () {
-    if ($(document).width() > 1300) {
-        setTimeout(function () {
-            initializeBoard();
-            handleWaveButton();
-        }, 100);
-    }
-});
-export default Flipboard;
+
+export { Flipboard, handleDisplayButton, handleWaveButton, initializeBoard, handleAllButton};

@@ -5,7 +5,15 @@ import MainButton from './MainButton';
 import Line from './Line'
 import { NavbarButton } from './Navbar';
 import { Link } from "react-router-dom";
-
+import { initializeBoard, handleWaveButton } from "../flipboard/Flipboard"
+var loadFlipboard = () => {
+    if (document.body.clientWidth > 1300) {
+        setTimeout(function () {
+            initializeBoard();
+            handleWaveButton();
+        }, 2000);
+    }
+}
 
 function Project(props) {
     return (
@@ -16,7 +24,9 @@ function Project(props) {
             <div className={props.classes}>
                 <div className="small-subheading-text">{props.title}</div>
                 <div className="small-description-text">{props.description}</div>
-                <Link className="project-button" to={props.link}><MainButton text="Try it!" /></Link>
+                <div onClick={loadFlipboard}>
+                    <Link className="project-button" to={props.link}><MainButton text="Try it!" /></Link>
+                </div>
             </div>
         </div>
     )

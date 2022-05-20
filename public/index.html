@@ -30,19 +30,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({duration: 1200});
-      document.addEventListener('scroll', function(e) {
-        var height = window.innerHeight;
-        var element = document.getElementById("about");
-        var test = element.getBoundingClientRect();
-        //console.log(h, test.top, test.bottom);
-      })
-      document.addEventListener('aos:in', ({ detail }) => {
-        console.log('animated in', detail);
-      });
-
-      document.addEventListener('aos:out', ({ detail }) => {
-        console.log('animated out', detail);
-      });
     </script>
   </body>
 </html>
