@@ -16,9 +16,6 @@ function Logo() {
         </Link>
     );
 }
-function AnimationDropdown() {
-
-}
 function FlipboardNavbar() {
     const handleClick = () => {
         handleDisplayButton();
@@ -30,7 +27,7 @@ function FlipboardNavbar() {
         handleWaveButton();
     }
     return (
-        <div className="navbar-container" data-aos="fade-down">
+        <div className="navbar-container flipboard-navbar" data-aos="fade-down">
             <div className="navbar">
                 <Logo />
                 <div className="navbar-buttons">

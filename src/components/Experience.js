@@ -27,7 +27,10 @@ function ExperienceElement(props) {
         <div className="general-container experience-element" data-aos="fade-left">
             <img className="experience-logo" src={props.logo} />
             <div>
-                <div className="small-subheading-text">{props.name}</div>
+                <div className="experience-con">
+                    <div className="small-subheading-text">{props.name}</div>
+                    <div className="small-description-text" style={{ "marginLeft": "20px" }}>{props.role}</div>
+                </div>
                 <div className="small-description-text">{props.description}</div>
             </div>
         </div>
@@ -60,19 +63,19 @@ function Timeline() {
 function AllExperience() {
     return (
         <div>
-            <ExperienceElement logo={momentum_logo} name="Momentum" description="Coordinated logistics for the newest startup accelerator and incubator at University of Texas as a lead founding officer" />
-            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" description="Lead a SCRUM team of 5 engineers to develop an admin dashboard for Tuktuk which displayed critical real-time data" />
-            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" description="Accelerated development of space flight simulation software by recognizing and diagnosing 27+ critical system errors
-" />
-            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" description=" Developed a dynamic website and email database to boost company exposure and gain contact list of over 50 clients" />
+            <ExperienceElement logo={momentum_logo} name="Momentum" role = "Tech Lead" description="Coordinated logistics for the newest startup accelerator and incubator at University of Texas as a lead founding officer" />
+            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" role = "CTO" description="Lead a SCRUM team of 5 engineers to develop an admin dashboard for Tuktuk which displayed critical real-time data" />
+            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" role = "Software Engineering Intern" description="Accelerated development of space flight simulation software by recognizing and diagnosing 27+ critical system errors" />
+            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" role = "Full Stack Developer"description="Developed a dynamic website and email database to boost company exposure and gain contact list of over 50 clients" />
         </div>
     );
 }
 function Experience() {
     return (
         <div id="experience" className="experience">
-            <div className="subheading-text" data-aos="fade-up">Education and Experience</div>
+            <div className="subheading-text" data-aos="fade-up">Education</div>
             <Education />
+            <div className="subheading-text" data-aos="fade-up" style={{ "paddingTop": "100px" }}>Experience</div>
             <div className="experience-timeline">
                 <Timeline />
                 <AllExperience />

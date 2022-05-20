@@ -11,7 +11,7 @@ var loadFlipboard = () => {
         setTimeout(function () {
             initializeBoard();
             handleWaveButton();
-        }, 2000);
+        }, 1000);
     }
 }
 

@@ -3,7 +3,7 @@
 .flipboard {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 900px;
     /*border: white solid;*/
 }
 .flipboard-display {
@@ -12,6 +12,7 @@
     height: 720px;
     width: 1300px;
 }
+
 .flip-square {
     position: absolute;
     width: 60px;
@@ -19,6 +20,7 @@
     background-image: url("../images/symbol_sprite_sheet.png");
     background-size: cover;
 }
+
 .flipboard-hide-row {
     z-index: 999;
     background-color: #202020;
@@ -37,6 +39,9 @@
     position: absolute;
     top: 0px;
 }
+.flipboard-navbar {
+    z-index: 9999;
+}
 .flipboard-input {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -44,7 +49,7 @@
     border-bottom-style: hidden;
     background-color: #262832;
     height: 40px;
-    width: 900px;
+    width: 700px;
     color: var(--lightgray);
     padding-left: 20px;
     border-radius: 20px;
@@ -53,4 +58,26 @@
 }
 .flipboard-input:focus {
     outline: none;
+}
+.flipboard-blog-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.flipboard-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-element {
+    width: 1200px;
+}
+.flipboard-refresh {
+    position: absolute;
+    top: 830px;
+    margin-left: 1180px;
+}
+.flipboard-heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

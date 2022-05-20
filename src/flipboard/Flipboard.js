@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import "./flipboard.css"
+
+
 import $ from 'jquery';
 
 /* 
@@ -450,5 +452,10 @@ class Flipboard extends React.Component {
         )
     }
 }
+
+
+
+
+
 
 export { Flipboard, handleDisplayButton, handleWaveButton, initializeBoard, handleAllButton};
