@@ -1,7 +1,7 @@
 function Website_Blog() {
     return (
-        <div>
-            Website
+        <div style={{ "color": "white" }}>
+            UNDER CONSTRUCTION: CHECK BACK LATER
         </div>
     );
 }

@@ -1,0 +1,20 @@
+@import "../App.css";
+
+.awesome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.awesome-image {
+    width: 900px;
+}
+.awesome-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.awesome-blog-component {
+    width: 1200px;
+}

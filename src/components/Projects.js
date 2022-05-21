@@ -40,7 +40,6 @@ function ProjectNavbar() {
                 <NavbarButton text="Other Projects:" />
                 <Link to="website-blog"><NavbarButton text="This Website!" /></Link>
                 <Link to="mining-rig-blog"><NavbarButton text="Cryptocurrency Mining Rig" /></Link>
-                <Link to="tuktuk-blog"><NavbarButton text="Tuktuk Admin Dashboard" /></Link>
             </div>
             <Line />
         </div>
@@ -52,7 +51,7 @@ function Projects() {
         <div id="projects" className="projects">
             <div className="projects-title">
                 <div className="subheading-text" data-aos="fade-up">Featured Projects</div>
-                <div className="description-text project-description" data-aos="fade-up">I enjoy developing apps and projects that blend interesting technologies with UI/UX design. Try some of them out and read how I build them in my blog and github links.</div>
+                <div className="description-text project-description" data-aos="fade-up">I develop apps and projects that blend interesting technologies with UI/UX design. Try some of them out and read how I build them in my blog and Github links.</div>
                 <Project classes="general-container project-info-right" title="Reactive Flipboard" image_src={flipboard} link="flipboard-blog" fade="fade-up" description="Beautifully animated text box that emulates a train station flipboard" />
                 <Project classes="general-container project-info-left" title="Awesome Mix" image_src={awesome_mix} link="awesome-mix-blog" fade="fade-right" description="Modern record player that reads RFID values and plays songs from the Spotify API" />
                 <ProjectNavbar />

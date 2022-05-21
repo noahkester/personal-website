@@ -1,7 +1,7 @@
 function MiningRig_Blog() {
     return (
-        <div>
-            MiningRig
+        <div style={{"color":"white"}}>
+            UNDER CONSTRUCTION: CHECK BACK LATER
         </div>
     );
 }
