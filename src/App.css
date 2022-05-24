@@ -56,3 +56,10 @@ a {
     border-radius: 20px;
     border: solid var(--lightgray) 1px;
 }
+.construction {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

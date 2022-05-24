@@ -29,8 +29,9 @@ function Setup() {
                 <img src={jquery}></img>
             </div>
             <div className="small-description-text blog-element">And include the following import in the JS file</div>
-
-            <img className="blog-element" src={ijq}></img>
+            <div className="flip-code">
+                <img src={ijq}></img>
+            </div>
             <div className="small-description-text">This tutorial is going to be more high-level but if you want to follow along to make your own, make sure to explore the Github and follow along from there.</div>
         </div>
     )
@@ -41,7 +42,9 @@ function Components() {
             <div className="subheading-text blog-element flipboard-heading">Components</div>
             <div className="small-description-text blog-element">React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</div>
             <div className="small-description-text blog-element">The best way to think about the flipboard is as a collection of these individual components. Each FlipComponent is also made of 4 different FlipSquares that create the animation. The hierarchy can be thought of as a Flipboard made of FlipRows made of FlipComponents made of 2 FlipCards made of 2 FlipSquares.</div>
-            <img className="blog-element" src={components}></img>
+            <div className="flip-code">
+                <img src={components}></img>
+            </div>
             <div className="small-description-text blog-element">I know it’s a lot of ‘Flips’ but they will all be explained. When working with components it is best to start small and work up so we are going to start with a single FlipSquare.</div>
         </div>
     )
@@ -51,11 +54,17 @@ function FlipSquaresBlog() {
         <div data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">FlipSquares</div>
             <div className="small-description-text blog-element">Our FlipSquare is going to be a div with an image inside. Because each letter is cut horizontally in half, there are 2 FlipSquares that compose a FlipCard to show the whole letter. To create one FlipSquare, we need to get the dimensions of the image in our CSS. Width to height ratio is 4:6 for a full card which means a square is 4:3 (in CSS the width and height are 40px 30px).</div>
-            <img className="blog-element" src={flipsquare}></img>
+            <div className="flip-code">
+                <img src={flipsquare}></img>
+            </div>
             <div className="small-description-text blog-element">To actually render this component on the screen it is important to think about how this square is going to move on the screen. When a square is animated it either moves up or down and does not affect the squares around it. Positioning the square as ‘relative’ would be very difficult, so the positioning for each square is absolute. While there are many ways to position a square correctly on the screen with this approach, I created a method that automatically runs when the screen is refreshed that sets the locations of all the elements dynamically. This is done by setting the CSS top and left or right elements with calculations based on the screen width and height. Note: If the screen is too small to render all the elements in the board, a media query is triggered and the board is not rendered instead of every element dynamically resizing. This was done for simplicity when writing the code.</div>
-            <img className="blog-element" src={setlocation}></img>
+            <div className="flip-code">
+                <img src={setlocation}></img>
+            </div>
             <div className="small-description-text blog-element">There are also methods to determine which image is rendered on each square. Instead of having 65 layer squares each with a rendered image, the board only has 2 and the square in the back is dynamically updated right before it is revealed to give the illusion of multiple images. It is updated using a sprite image and moving the viewframe based on the components letter state. The letter states are tracked and once it reaches the end of the sprite, it resets back to the beginning.</div>
-            <img className="blog-element" src={spriteposition}></img>
+            <div className="flip-code">
+                <img src={spriteposition}></img>
+            </div>
         </div>
     )
 }
@@ -64,7 +73,9 @@ function FlipCardBlog() {
         <div data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">FlipCard</div>
             <div className="small-description-text blog-element">A FlipCard is composed of 2 FlipSquares. It actually shows an entire letter instead of just half of it. The main challenge with a flipcard is animating it to look like a physical train station flipboard. After researching and watching how the physical board animates, I found that it would look most realistic to animate the top FlipSquare moving down behind the bottom FlipSquare, and then right after, animate both of them moving down below revealing the new letter. This animation was done with SetTimeout functions that held animate methods for the squares. </div>
-            <img className="blog-element" src={animation}></img>
+            <div className="flip-code">
+                <img src={animation}></img>
+            </div>
         </div>
     )
 }
@@ -73,7 +84,9 @@ function FlipComponentsBlog() {
         <div data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">FlipComponent</div>
             <div className="small-description-text blog-element">A FlipComponent is composed of 2 FlipCards. This is done because once the front FlipCard is animated down, a new one must be already behind it to reveal the new letter. However, doing this with 65 cards layered is very expensive and inefficient (I learned this the hard way). Instead, it is much simpler to only have 2 that update on each flip. After the front card is moved down and reveals the back card, it must quickly move back in position behind the new card. This is done with another animation function being triggered and a new function called setZIndex. This function takes a FlipComponet and flips the z index layering so the previous front card can now be in the back.</div>
-            <img className="blog-element" src={setZ}></img>
+            <div className="flip-code">
+                <img src={setZ}></img>
+            </div>
         </div>
     )
 }
@@ -82,7 +95,6 @@ function FlipRowBlog() {
         <div data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">FlipRow</div>
             <div className="small-description-text blog-element">Each row needs a few key components. First it needs all the FlipComponents that compose it. For the above example, I used 16 but it would be just as easy to render 3 or 100 because of Reacts components. Each row also needs a ‘hidden wall’ to hide some messy aspects of our animation. If you remember, when a flipcard animates, both FlipSquares move downward. Without a div element hiding this, you would be able to see this animation happen and it wouldn’t look great. Each FlipRow has a div that spans the board horizontally with a very high z-index to hide this.</div>
-            <img className="blog-element" src={setZ}></img>
         </div>
     )
 }
@@ -91,9 +103,13 @@ function FlipboardComponentBlog() {
         <div style={{ "paddingBottom": "50px" }} data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">Flipboard</div>
             <div className="small-description-text blog-element">Now the tricky part. The FlipBoard is just a collection of FlipRows but it has much more complex methods to actually get a message to be displayed from the user. When the FlipComponents are rendered, they have custom ids associated with them to access later. When a user types in a message, there is a custom method called that parses the string and centers it with whitespace to be perfectly 64 characters in length. This is done because there are 4 rows with 16 components each which totals to 64 components. Once this string is converted (or rejected if the input is too long), It is passed into the flipboard to render.</div>
-            <img src={refactor}></img>
+            <div className="flip-code">
+                <img src={refactor}></img>
+            </div>
             <div className="small-description-text blog-element">The flipboard takes the associated index of the string with the id of the square. Index 0 of the string is component 0. If the letter to render is ‘B’, it will call a function ‘FlipRepeat’ that flips the corresponding component until the letter matches the current state. However, we also do not want each square to flip independently and then once it’s done moving on, we need them to all flip simultaneously. This is done by making our program multi-threaded with each thread flipping a new component. I used the setTimeout function that does this with one thread waiting on the time interval to finish and the next moving on to the next component. After this is done, the last step is just retrieving the data from the user HTML input box and then running the display word function when the button is pressed.</div>
-            <img className="blog-element" src={display}></img>
+            <div className="flip-code">
+                <img src={display}></img>
+            </div>
         </div>
     )
 }
@@ -120,7 +136,7 @@ function FlipboardBlog() {
                 <Line />
                 <div className="flipboard-blog-title blog-element" style={{ "paddingTop": "30px" }} data-aos="fade-up">
                     <div className="heading-text">Reactive Flipboard</div>
-                    <div className="description-text" style={{ "paddingTop": "30px" }}>This project beautifully emulates a train station flipboard by displaying interactive text. This project was built entirely from scratch using HTML, CSS, JavaScript, React, and JQuery.</div>
+                    <div className="description-text" style={{ "paddingTop": "30px", "textAlign": "center"}}>This project beautifully emulates a train station flipboard by displaying interactive text. This project was built entirely from scratch using HTML, CSS, JavaScript, React, and JQuery.</div>
                     <a href="https://github.com/noahkester/personal-website/tree/main/src/flipboard" target="_blank" style={{ "paddingBottom": "50px", "paddingTop": "30px" }}><MainButton text="Github" /></a>
                 </div>
                 <Setup />

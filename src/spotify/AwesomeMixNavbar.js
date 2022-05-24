@@ -3,6 +3,8 @@ import MainButton from "../components/MainButton";
 import Line from "../components/Line"
 import logo from '../images/logo.svg';
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
+
 function Logo() {
     return (
         <Link to="/">
@@ -16,9 +18,9 @@ function AwesomeMixNavbar() {
             <div className="navbar">
                 <Logo />
                 <div className="navbar-buttons">
-                    <a href="#awesome-setup"><NavbarButton text="Setup" /></a>
-                    <a href="#awesome-client"><NavbarButton text="Client" /></a>
-                    <a href="#awesome-server"><NavbarButton text="Server" /></a>
+                    <HashLink to="#awesome-setup"><NavbarButton text="Setup" /></HashLink>
+                    <HashLink to="#awesome-client"><NavbarButton text="Client" /></HashLink>
+                    <HashLink to="#awesome-server"><NavbarButton text="Server" /></HashLink>
                 </div>
                 <div className="navbar-main-button">
                     <MainButton text="Github" />

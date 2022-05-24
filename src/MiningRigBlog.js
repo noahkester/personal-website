@@ -1,9 +1,13 @@
-function MiningRig_Blog() {
+import construction from "./images/brickwall.png"
+import "./App.css"
+function MiningRigBlog() {
     return (
-        <div style={{"color":"white"}}>
-            UNDER CONSTRUCTION: CHECK BACK LATER
+        <div className="construction">
+            <img src={construction} style={{ "width": "200px" }} />
+            <div className="subheading-text">Under Construction!</div>
+            <div className="description-text">Check Back Later!</div>
         </div>
     );
 }
 
-export default MiningRig_Blog;
+export default MiningRigBlog;

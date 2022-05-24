@@ -18,3 +18,10 @@
 .awesome-blog-component {
     width: 1200px;
 }
+.awesome-chapter {
+    padding-top: 80px;
+}
+.awesome-code {
+    display: flex;
+    justify-content: center;
+}

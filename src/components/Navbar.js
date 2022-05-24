@@ -27,7 +27,7 @@ function Navbar() {
                     <HashLink to="#about"><NavbarButton text="About" /></HashLink>
                     <HashLink to="#projects"><NavbarButton text="Projects" /></HashLink>
                     <HashLink to="#experience"><NavbarButton text="Experience" /></HashLink>
-                    <a href="https://docs.google.com/document/d/e/2PACX-1vRzSNC9u-tXyWwIpJhhx-4UPQg-TrwBSCkvia6_qha3Y8S4R0PfPw6GhCniDP2ZbljqaxYbn709QIZm/pub" target="_blank"><NavbarButton text="Resume" /></a>
+                    <a href="https://docs.google.com/document/d/1uiZxJGAt15GdAFoaAbxM9lR5lgYivTjM/export?format=pdf" target="_blank"><NavbarButton text="Resume" /></a>
                     <a href="https://github.com/noahkester" target="_blank"><NavbarButton text="Github" /></a>
                 </div>
                 <a href="mailto:noahkester35@gmail.com"><div className="navbar-main-button">
