@@ -74,7 +74,7 @@ function EducationBanner() {
                 <div className="ticker-tape img-ticker-1">
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
-                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Discrete Math" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
@@ -83,7 +83,7 @@ function EducationBanner() {
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
-                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Discrete Math" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
@@ -92,7 +92,7 @@ function EducationBanner() {
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
-                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Discrete Math" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
@@ -101,7 +101,7 @@ function EducationBanner() {
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
-                    <BannerElement ticker_class={"large-ticker-element"} text="Descrete Math" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Discrete Math" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Computer Architecture" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Matrices and Linear Algebra" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
