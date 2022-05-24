@@ -31,7 +31,7 @@ function ExperienceElement(props) {
                     <div className="small-subheading-text">{props.name}</div>
                     <div className="small-description-text" style={{ "marginLeft": "20px" }}>{props.role}</div>
                 </div>
-                <div className="small-description-text">{props.description}</div>
+                <div className="small-description-text" style={{ "paddingRight": "20px" }}>{props.description}</div>
             </div>
         </div>
     )
@@ -64,9 +64,9 @@ function AllExperience() {
     return (
         <div>
             <ExperienceElement logo={momentum_logo} name="Momentum" role = "Tech Lead" description="Coordinated logistics for the newest startup accelerator and incubator at University of Texas as a lead founding officer" />
-            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" role = "CTO" description="Lead a SCRUM team of 5 engineers to develop an admin dashboard for Tuktuk which displayed critical real-time data" />
-            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" role = "Software Engineering Intern" description="Accelerated development of space flight simulation software by recognizing and diagnosing 27+ critical system errors" />
-            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" role = "Full Stack Developer"description="Developed a dynamic website and email database to boost company exposure and gain contact list of over 50 clients" />
+            <ExperienceElement logo={tuktuk_logo} name="Tuktuk" role = "CTO" description="Led a SCRUM team to develop fullstack applications for a ridesharing company based in Austin" />
+            <ExperienceElement logo={lockheed_logo} name="Lockheed Martin" role = "Software Engineering Intern" description="Accelerated development of space flight simulation software by recognizing and diagnosing critical system errors in C and Java" />
+            <ExperienceElement logo={rebellion_logo} name="Rebellion Photonics" role = "Full Stack Developer"description="Developed a dynamic website using frontend technologies and email database to boost company exposure" />
         </div>
     );
 }

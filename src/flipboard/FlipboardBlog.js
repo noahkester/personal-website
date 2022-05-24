@@ -20,11 +20,16 @@ function Setup() {
         <div data-aos="fade-right">
             <div className="subheading-text blog-element flipboard-heading">Setup</div>
             <div className="small-description-text">Start by creating a default react app using npm</div>
-            <img className="blog-element" src={npm}></img>
+            <div className="flip-code">
+                <img src={npm}></img>
+            </div>
             <div className="small-description-text">Delete unnecessary files and start with a blank screen</div>
             <div className="small-description-text">JQuery is also extremely useful for accessing elements by id. Include the library by adding this link in the main HTML documents head</div>
-            <img className="blog-element" src={jquery}></img>
+            <div className="flip-code">
+                <img src={jquery}></img>
+            </div>
             <div className="small-description-text blog-element">And include the following import in the JS file</div>
+
             <img className="blog-element" src={ijq}></img>
             <div className="small-description-text">This tutorial is going to be more high-level but if you want to follow along to make your own, make sure to explore the Github and follow along from there.</div>
         </div>
