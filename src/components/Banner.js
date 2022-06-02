@@ -13,6 +13,8 @@ import electron_image from '../images/electron.svg'
 import redis_image from '../images/redis.svg'
 import mysql_image from '../images/mysql.svg'
 import github_image from '../images/github.svg'
+import expo_image from '../images/expo.png'
+import firebase_image from '../images/firebase.png'
 
 function BannerElement(props) {
     return (
@@ -36,6 +38,8 @@ function SkillsBanner() {
                     <BannerElement ticker_class={"ticker-element"} img_src={css_image} text="CSS" />
                     <BannerElement ticker_class={"ticker-element"} img_src={js_image} text="JavaScript" />
                     <BannerElement ticker_class={"ticker-element"} img_src={html5_image} text="HTML5" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={expo_image} text="Expo" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={firebase_image} text="Firebase" />
                     <BannerElement ticker_class={"ticker-element"} img_src={python_image} text="Python" />
                     <BannerElement ticker_class={"ticker-element"} img_src={git_image} text="Git" />
                     <BannerElement ticker_class={"ticker-element"} img_src={react_image} text="React" />
@@ -50,6 +54,8 @@ function SkillsBanner() {
                     <BannerElement ticker_class={"ticker-element"} img_src={css_image} text="CSS" />
                     <BannerElement ticker_class={"ticker-element"} img_src={js_image} text="JavaScript" />
                     <BannerElement ticker_class={"ticker-element"} img_src={html5_image} text="HTML5" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={expo_image} text="Expo" />
+                    <BannerElement ticker_class={"ticker-element"} img_src={firebase_image} text="Firebase" />
                     <BannerElement ticker_class={"ticker-element"} img_src={python_image} text="Python" />
                     <BannerElement ticker_class={"ticker-element"} img_src={git_image} text="Git" />
                     <BannerElement ticker_class={"ticker-element"} img_src={react_image} text="React" />
@@ -80,6 +86,7 @@ function EducationBanner() {
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Differential Equations" />
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
@@ -89,6 +96,7 @@ function EducationBanner() {
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Differential Equations" />
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
@@ -98,6 +106,7 @@ function EducationBanner() {
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Differential Equations" />
 
                     <BannerElement ticker_class={"large-ticker-element"} text="Data Structures" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Operating Systems" />
@@ -107,6 +116,7 @@ function EducationBanner() {
                     <BannerElement ticker_class={"large-ticker-element"} text="Competative Programming" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Mobile Computing" />
                     <BannerElement ticker_class={"large-ticker-element"} text="Algorithms" />
+                    <BannerElement ticker_class={"large-ticker-element"} text="Differential Equations" />
 
                 </div>
             </div>

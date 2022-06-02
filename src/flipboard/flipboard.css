@@ -6,6 +6,31 @@
     height: 900px;
     /*border: white solid;*/
 }
+.blur {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 9991;
+    display: flex;
+    justify-content: center;
+}
+.check {
+    width: 100px;
+}
+.info {
+    margin-top: 200px;
+    color:white;
+    z-index: 9992;
+    background-color: #262832;
+    padding: 50px;
+    width: 680px;
+    height: 280px;
+    border-radius: 20px;
+    text-align: center;
+}
 .flipboard-display {
     position: relative;
     margin-top: 100px;
@@ -86,4 +111,7 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.code-border {
+    border-radius: 20px;
 }

@@ -25,3 +25,13 @@
     display: flex;
     justify-content: center;
 }
+.awesome-video {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.code-image {
+    border-radius: 20px;
+}
+.last {
+    margin-bottom: 100px;
+}

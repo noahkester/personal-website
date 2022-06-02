@@ -52,12 +52,12 @@ function Client() {
             <div className="small-description-text">This screen interfaces with a backend server to get the API request to the client. Once the credentials are approved, the user is taken to the dashboard.</div>
             <div className="small-description-text">The Dashboard renders the cassette gif and shows the song information. This is the main screen for the frontend to display information</div>
             <div className="awesome-code">
-                <img src={dashboard}></img>
+                <img className="code-image" src={dashboard}></img>
             </div>
             <div className="small-description-text">The TrackDisplay is a hidden element that will display briefly on the Dashboard when songs are scanned or when a user clicks on the Dashboard</div>
             <div className="small-description-text">The Player is a Spotify API library that will play a song given a name and will also render a component to press play or skip parts of a song that was scanned</div>
             <div className="awesome-code">
-                <img src={track}></img>
+                <img className="code-image" src={track}></img>
             </div>
         </div>
     );
@@ -68,11 +68,11 @@ function Server() {
             <div className="subheading-text awesome-blog-component">Server</div>
             <div className="small-description-text">The server utilizes REST API to interface with the Spotify API for user authentication. It refreshes authentication tokens and directs the client to the Dashboard when successfully logged in. </div>
             <div className="awesome-code">
-                <img src={login}></img>
+                <img className="code-image" src={login}></img>
             </div>
             <div className="small-description-text">The server also has an interval function that constantly checks the RFID module for scanned cards and updates the current song playing if there is a change. This update is sent to the client using socket.io connections. Below is the code for reading RFID values and sending the data via socket.io</div>
             <div className="awesome-code">
-                <img src={server} style={{ "paddingBottom": "50px" }}></img>
+                <img className="code-image last" src={server}></img>
             </div>
         </div>
     );
@@ -83,11 +83,13 @@ function AwesomeMixBlog() {
         <div>
             <AwesomeMixNavbar />
             <div className="awesome">
-                <img src={amc} style={{ "paddingBottom": "100px" }}></img>
+                <video className="awesome-video" width="1200" height="700" controls>
+                    <source src="/Videos/awesomemix.mp4" type="video/mp4" />
+                </video>
                 <Line />
                 <div className="awesome-title awesome-blog-component" style={{ "paddingTop": "30px" }}>
-                    <div className="heading-text">Awesome Mix</div>
-                    <div className="description-text" style={{ "paddingTop": "10px", "textAlign": "center" }}>The Modern Day record player is an adaption of the classic record player but instead of using vinyl, this record player will read an RFID card and interface with the Spotify API. Above is the optional UI that can be run if a display screen is setup with the Pi. Built with NodeJS, Spotify API, Socket.io, ReactJS</div>
+                    <div className="heading-text">Modern Record Player</div>
+                    <div className="description-text" style={{ "paddingTop": "10px", "textAlign": "center" }}>The Modern Record Player is an adaption of the classic record player but instead of using vinyl, it will read an RFID card and interface with the Spotify API. Above is a demo with the scanner and Pi connected to a speaker and an optional UI that can be displayed from a built-in screen. Built with NodeJS, Spotify API, Socket.io, ReactJS</div>
                     <a href="https://github.com/noahkester/record-player" target="_blank" style={{ "paddingBottom": "50px", "paddingTop": "30px" }}><MainButton text="Github" /></a>
                 </div>
                 <Setup />

@@ -63,3 +63,14 @@ a {
     align-items: center;
     flex-direction: column;
 }
+.mobile-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+.wrench {
+    height: 200px;
+}

@@ -8,3 +8,13 @@
 .bottom-navbar-element {
     padding: 50px;
 }
+.more-info {
+    display: flex;
+    align-items: center;
+}
+.arrow {
+    width: 50px;
+}
+.contact-info {
+    line-height: 2
+}
