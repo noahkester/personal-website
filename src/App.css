@@ -19,6 +19,12 @@ html {
 a {
     text-decoration: none;
 }
+.intro-text {
+    font-family: var(--font);
+    font-weight: var(--bold);
+    font-size: 160px;
+    color: white;
+}
 .heading-text {
     font-family: var(--font);
     font-weight: var(--bold);

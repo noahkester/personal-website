@@ -1,13 +1,17 @@
 @import "../../App.css";
 .introduction {
-    height: 80vh;
+    padding-top: 220px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .introduction-text {
-    width: 60%;
+    text-align: center;
+}
+.intro-below {
+  margin-top: -40px;
 }
 .h1-test {
     font-size: 3rem;
@@ -99,3 +103,17 @@
       text-indent: 0;
     }
   }
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#image {
+  display: none;
+  border-style: solid;
+}
+.intro-spacing {
+  height: 40vh;
+}

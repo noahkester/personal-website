@@ -3,6 +3,7 @@ import logo from '../images/logo.svg';
 import MainButton from './MainButton';
 import Line from './Line'
 import { HashLink } from 'react-router-hash-link';
+import useWindowDimensions from '../windowDimensions';
 
 function Logo() {
     return (
@@ -19,17 +20,20 @@ function NavbarButton(props) {
     );
 }
 function Navbar() {
+    const { height, width } = useWindowDimensions();
     return (
         <div className="navbar-container" data-aos="fade-down">
             <div className="navbar">
                 <HashLink to="#introduction"><Logo /></HashLink>
-                <div className="navbar-buttons">
-                    <HashLink to="#about"><NavbarButton text="About" /></HashLink>
-                    <HashLink to="#projects"><NavbarButton text="Projects" /></HashLink>
-                    <HashLink to="#experience"><NavbarButton text="Experience" /></HashLink>
-                    <a href="https://drive.google.com/file/d/1QeutaYQsNSi8Ag-XIKQqpzvRitHjXvNd/view" target="_blank"><NavbarButton text="Resume" /></a>
-                    <a href="https://github.com/noahkester" target="_blank"><NavbarButton text="Github" /></a>
-                </div>
+                {(width > 1064) &&
+                    <div className="navbar-buttons">
+                        <HashLink to="#about"><NavbarButton text="About" /></HashLink>
+                        <HashLink to="#projects"><NavbarButton text="Projects" /></HashLink>
+                        <HashLink to="#experience"><NavbarButton text="Experience" /></HashLink>
+                        <a href="https://drive.google.com/file/d/1QeutaYQsNSi8Ag-XIKQqpzvRitHjXvNd/view" target="_blank"><NavbarButton text="Resume" /></a>
+                        <a href="https://github.com/noahkester" target="_blank"><NavbarButton text="Github" /></a>
+                    </div>
+                }
                 <a href="mailto:noahkester35@gmail.com"><div className="navbar-main-button">
                     <MainButton text="Contact Me" />
                 </div></a>

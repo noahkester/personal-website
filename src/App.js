@@ -10,8 +10,9 @@ import { Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
+  // width > 1064
   const { height, width } = useWindowDimensions();
-  if (width > 1064) {
+  if (width > 0) {
     return (
       <div>
         <Routes>

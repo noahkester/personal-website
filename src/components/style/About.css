@@ -8,6 +8,9 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+.mobile-about {
+    flex-direction: column;
+}
 .about-text {
     width: 700px;
     margin-left: 50px;
