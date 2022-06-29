@@ -6,7 +6,7 @@
     --lightblue: #5863ED;
     --regular: 400;
     --medium: 500;
-    --semi-bold: 600;
+    --semi-bold: 00;
     --bold: 700;
     --nav-spacing: 30px;
     --main-dark-background: #14161F;
@@ -46,17 +46,24 @@ a {
 }
 .small-description-text {
     font-family: var(--font);
-    font-weight: var(--regular);
+    font-weight: var(--medium);
     font-size: 16px;
+    line-height: 40px;
+    color: white;
+}
+.smaller-description-text {
+    font-family: var(--font);
+    font-weight: var(--medium);
+    font-size: 12px;
     line-height: 40px;
     color: white;
 }
 .description-text {
     font-family: var(--font);
-    font-weight: var(--regular);
-    font-size: 24px;
-    line-height: 40px;
-    color: white;
+    font-weight: var(--medium);
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--lightgray);
 }
 .general-container {
     background-color: var(--container-dark-background);

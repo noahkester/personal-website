@@ -46,6 +46,25 @@
 .project-description {
     width: 1000px;
 }
+.project-description-mobile {
+    width: 90%;
+}
 .project-image {
     width: 700px;
+}
+
+
+.project-image-mobile {
+    width: 100%;
+}
+.project-container-mobile {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.project-info-mobile {
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

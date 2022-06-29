@@ -6,14 +6,14 @@
     justify-content: space-between;
 }
 .bottom-navbar-element {
-    padding: 50px;
+    padding: 25px;
 }
 .more-info {
     display: flex;
     align-items: center;
 }
 .arrow {
-    width: 50px;
+    width: 36px;
 }
 .contact-info {
     line-height: 2

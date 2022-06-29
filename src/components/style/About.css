@@ -16,14 +16,28 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+.about-text-mobile {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .profile-image {
     width: 400px;
     margin-left: 50px;
     margin-right: 50px;
 }
+.profile-image-mobile {
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 .about-container {
     padding-top: 100px;
 }
+.about-container-mobile {
+    padding-top: 50px;
+}
 .about-text-element {
-    padding-top: 30px;
+    padding-top: 12px;
 }
