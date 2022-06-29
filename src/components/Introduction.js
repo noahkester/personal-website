@@ -1,6 +1,7 @@
 import './style/Introduction.css';
 import useWindowDimensions from '../windowDimensions';
 import sand from "../images/sand.png"
+import sand_mobile from "../images/sand_mobile.png"
 function Titles() {
     return (
         <div className="heading-text h1-test">
@@ -16,17 +17,27 @@ function Titles() {
 
 function Introduction() {
     const { height, width } = useWindowDimensions();
-    return (
-        <div id="introduction" className="introduction" data-aos="fade-right">
-            <div className="introduction-text">
-                {/*<div className="intro-text">NOAH KESTER</div>
-                <div className="subheading-text intro-below">Hover over my name!</div>*/}
-                <canvas id="canvas1"></canvas>
-                <img src={sand} id="image"></img>
-                <div className="intro-spacing"></div>
+    if (width > 1064) {
+        return (
+            <div id="introduction" className="introduction" data-aos="fade-right">
+                <div className="introduction-text">
+                    <canvas id="canvas1"></canvas>
+                    <img src={sand} id="image"></img>
+                    <div className="intro-spacing"></div>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+    else {
+        return (
+            <div id="introduction" className="introduction" data-aos="fade-right">
+
+                <canvas id="canvas1"></canvas>
+                <img src={sand_mobile} id="image"></img>
+
+            </div>
+        )
+    }
 }
 window.addEventListener('load', function () {
     const canvas = document.getElementById('canvas1');

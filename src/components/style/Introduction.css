@@ -1,14 +1,10 @@
 @import "../../App.css";
 .introduction {
-    padding-top: 220px;
-    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.introduction-text {
-    text-align: center;
+    height: 80vh;
 }
 .intro-below {
   margin-top: -40px;
@@ -37,83 +33,12 @@
     position: absolute;
     padding-left: 0.5rem;
     animation: openclose 8s ease-in-out infinite;
-  }
-  
-@keyframes openclose {
-    0% {
-      top: 0.2rem;
-      width: 0;
-    }
-    5% {
-      width: 0;
-    }
-    15% {
-      width: 575px;
-    }
-    30% {
-      top: 0.2rem;
-      width: 575px;
-    }
-    33% {
-      top: 0.2rem;
-      width: 0;
-    }
-    35% {
-      top: 0.2rem;
-      width: 0;
-    }
-    38% {
-      top: -4.5rem;
-      
-    }
-    48% {
-      top: -4.5rem;
-      width: 450px;
-    }
-    62% {
-      top: -4.5rem;
-      width: 450px;
-    }
-    66% {
-      top: -4.5rem;
-      width: 0;
-      text-indent: 0;
-    }
-    71% {
-      top: -9rem;
-      width: 0;
-      text-indent: 5px;
-    }
-    86% {
-      top: -9rem;
-      width: 620px;
-    }
-    95% {
-      top: -9rem;
-      width: 620px;
-    }
-    98% {
-      top: -9rem;
-      width: 0;
-      text-indent: 5px;
-    }
-    100% {
-      top: 0;
-      width: 0;
-      text-indent: 0;
-    }
-  }
+}
 canvas {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
+    padding-top: 150px;
 }
 #image {
   display: none;
-  border-style: solid;
-}
-.intro-spacing {
-  height: 40vh;
 }
