@@ -17,11 +17,8 @@ function BottomNavbar() {
                         <div className="small-description-text contact-info">Austin, TX</div>
                     </div>
                     <div className="more-info">
-                        <div className="small-subheading-text bottom-navbar-element">Want to know more about me?</div>
-                        <img
-                            src={require("../images/arrow.png")}
-                            className="arrow"
-                        />
+
+
                     </div>
                     <div className="bottom-navbar-element">
                         <a href="mailto:noahkester35@gmail.com"><MainButton text="Lets Chat!" /></a>

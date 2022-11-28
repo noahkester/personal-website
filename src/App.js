@@ -6,6 +6,8 @@ import WebsiteBlog from './WebsiteBlog';
 import MiningRigBlog from './MiningRigBlog';
 import useWindowDimensions from './windowDimensions';
 import PGNAppBlog from './PGNApp';
+import Relex from './Relex';
+
 import { Routes, Route, Link } from "react-router-dom";
 
 
@@ -22,6 +24,7 @@ function App() {
           <Route path="website-blog" element={<WebsiteBlog />} />
           <Route path="mining-rig-blog" element={<MiningRigBlog />} />
           <Route path="pgn-app-blog" element={<PGNAppBlog />} />
+          <Route path="relex-app" element={<Relex />} />
         </Routes>
       </div>
     );

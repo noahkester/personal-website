@@ -28,8 +28,8 @@ function About() {
             <ProfileImage />
             <div className={(width > 1064) ? "about-text" : "about-text-mobile"} data-aos="fade-left">
                 <div className="subheading-text">About Me</div>
-                <div className="description-text">I'm a student at the University of Texas at Austin. Hook em! I have a passion creating projects that have impact.</div>
-                <div className="description-text" style={{ paddingTop: '6px' }}>My interests include full-stack engineering, web-dev, mobile apps, blockchain, and project management.</div>
+                <div className="description-text">I'm a student at the University of Texas at Austin. I have experience developing multiple full-stack applications and am constantly looking to expand my skill set.</div>
+                <div className="description-text" style={{ paddingTop: '6px' }}>I’ve worked on numerous interesting projects that include the Orion program to mars, a ridesharing app, a gas cloud imaging company, missile defense, and a student-run startup accelerator. </div>
                 <div className="about-text-element"><a href="https://www.linkedin.com/in/noah-kester/" target="_blank"><MainButton text="LinkedIn" /></a></div>
             </div>
         </div>

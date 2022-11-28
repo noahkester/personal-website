@@ -43,7 +43,7 @@ function Menu(props) {
             <HashLink to="#about"><div className='menu-button'>About</div></HashLink>
             <HashLink to="#projects"><div className='menu-button'>Projects</div></HashLink>
             <HashLink to="#experience"><div className='menu-button'>Experience</div></HashLink>
-            <a href="https://drive.google.com/file/d/1QeutaYQsNSi8Ag-XIKQqpzvRitHjXvNd/view" target="_blank"><div className='menu-button'>Resume</div></a>
+            <a href="https://drive.google.com/file/d/1om7_6jm9bK41nbFXyS3pVqAs32EBSqb_/view" target="_blank"><div className='menu-button'>Resume</div></a>
             <a href="https://github.com/noahkester" target="_blank"><div className='menu-button'>Github</div></a>
         </div>
     )
@@ -59,7 +59,7 @@ function Navbar() {
                         <HashLink to="#about"><NavbarButton text="About" /></HashLink>
                         <HashLink to="#projects"><NavbarButton text="Projects" /></HashLink>
                         <HashLink to="#experience"><NavbarButton text="Experience" /></HashLink>
-                        <a href="https://drive.google.com/file/d/1QeutaYQsNSi8Ag-XIKQqpzvRitHjXvNd/view" target="_blank"><NavbarButton text="Resume" /></a>
+                        <a href="https://drive.google.com/file/d/1om7_6jm9bK41nbFXyS3pVqAs32EBSqb_/view" target="_blank"><NavbarButton text="Resume" /></a>
                         <a href="https://github.com/noahkester" target="_blank"><NavbarButton text="Github" /></a>
                     </div>
                     <a href="mailto:noahkester35@gmail.com"><div className="navbar-main-button">
